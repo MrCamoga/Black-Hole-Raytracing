@@ -1,8 +1,3 @@
-float angle(float3 a, float3 b) {
-	return dot(a,b)/length(a)/length(b);
-}
-
-
 __kernel void raytrace(__global const float *rays, __global const float *p, __global float *result) {
 	int i = get_global_id(0);
 	float3 pos = (float3) (p[0],p[1],p[2]);
