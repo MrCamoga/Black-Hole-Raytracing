@@ -1,0 +1,6 @@
+*.log
+/.git
+/.settings
+/bin
+.classpath
+.project
